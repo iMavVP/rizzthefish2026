@@ -107,30 +107,28 @@ button:hover { transform: scale(1.05); }
     }
 }
 
-/* Surprise Image */
-.surprise-img {
+/* Images and captions */
+.surprise-img, .memory-img {
     width: 300px;
     max-width: 90%;
     border-radius: 20px;
     margin-top: 20px;
 }
 
+.caption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ffd1dc;
+}
+
 /* Gallery */
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 20px;
+    gap: 40px;
 }
-
-.gallery img {
-    width: 100%;
-    border-radius: 15px;
-    transition: transform 0.3s ease;
-}
-
-.gallery img:hover { transform: scale(1.05); }
-
 </style>
 </head>
 
@@ -200,15 +198,22 @@ button:hover { transform: scale(1.05); }
     <div id="memories" class="content hidden">
         <h2>Our Memories 📸</h2>
         <div class="gallery">
-            <img src="image2.jpeg">
-            <img src="image3.jpeg">
-            <img src="image4.jpeg">
-            <img src="image5.jpeg">
-            <img src="image6.jpeg">
-            <img src="image7.jpeg">
-            <img src="image8.jpeg">
-            <img src="image9.jpeg">
-            <img src="image10.jpeg">
+            <div>
+                <img src="image3.jpeg" class="memory-img">
+                <div class="caption">Holding your hand is one of the best feelings in this world</div>
+            </div>
+            <div>
+                <img src="image5.jpeg" class="memory-img">
+                <div class="caption">Ah yes the iconic Raven's Nest hangout where we LOVE the dark staircase!</div>
+            </div>
+            <div>
+                <img src="image7.jpeg" class="memory-img">
+                <div class="caption">I'm taller than you loser wompwomp (Thank God)</div>
+            </div>
+            <div>
+                <img src="image10.jpeg" class="memory-img">
+                <div class="caption">I love you 224.</div>
+            </div>
         </div>
     </div>
 
